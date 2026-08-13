@@ -1,2 +1,3 @@
 # 2TWU.github.io
-github pages
+Use HTML . CSS & Javascript to make
+Powered by Github Pages
