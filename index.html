@@ -16,6 +16,8 @@
 		</main>
 
 
+		<div id="footer"></div>
+
     <script>
         // 使用 fetch 讀取 header.html 並塞入 #header
         fetch('./source/components/header.html')
@@ -27,6 +29,11 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('metadata').innerHTML = data;
+            });
+				fetch('./source/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
             });
     </script>
 	</body>
