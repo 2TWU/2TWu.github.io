@@ -42,12 +42,18 @@ body {
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	display:flex ;
+	flex-direction: column; /*使物件垂直排列*/
+	
+	min-height: 100dvh
 }
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
+	flex-grow: 1;
+	/*padding-bottom: 60px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
 h1,
 h2,
