@@ -1,0 +1,18 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  block-size: border-box;
+}
+
+body{
+  display:flex ;
+	flex-direction: column; /*使物件垂直排列*/
+  min-height: 100vh;
+}
+
+main{
+  margin: auto;
+  background: #eaeaea;
+  flex-grow: 1;
+}
+

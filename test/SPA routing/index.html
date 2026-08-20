@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>routing</title>
+    <script src="./router.js"></script>
+    <link rel="stylesheet" href="./global.css">
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <div id="content"></div>
+
+    <div id="footer"></div>
+  
+    <script>
+      fetch('./src/component/header.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("header").innerHTML = html ;
+        }
+      );
+      fetch('./src/component/footer.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html ;
+        }
+      );
+    </script>
+  </body>
+
+</html>

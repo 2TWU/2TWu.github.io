@@ -40,6 +40,7 @@
 
 	h2 a,
 	h2 a.active {
+		border: 0;
 		text-decoration: none;
 	}
 	nav {
@@ -47,11 +48,21 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+
+	.nav-center{
+		flex: 1;
+		text-align: center;
+	}
+
+	.nav-right{
+		flex: 1;
+		text-align: right;
+	}
+
 	nav a {
 		
 		padding: 1em 0.5em;
 		color: var(--black);
-		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
@@ -62,6 +73,7 @@
 	.nav-left a {
 		font-weight: 600;
 		display: flex;
+		flex: 1;
 	}
 	@media (max-width: 720px) {
 		.nav-left {
