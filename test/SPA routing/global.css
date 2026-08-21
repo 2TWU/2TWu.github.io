@@ -5,14 +5,47 @@
 }
 
 body{
+  /* 排版 */
   display:flex ;
 	flex-direction: column; /*使物件垂直排列*/
   min-height: 100vh;
+  line-height: 1.7;
+
+  /* 文字 */
+  font-size: 20px;
+  font-family: "Atkinson", sans-serif;
 }
 
-main{
-  margin: auto;
-  background: #eaeaea;
+#content{
+  width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+  width: 50%;
+  flex-grow: 1;  
+  padding: 3em 1em;
   flex-grow: 1;
 }
+h1{
+  text-align: center;
+}
+p{
+  text-align: justify;
+  margin-bottom: 1em;
+}
 
+
+/* ------------------------- 字體 ------------------------- */
+@font-face {
+	font-family: "Atkinson";
+	src: url("..../public/fonts/atkinson-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Atkinson";
+	src: url("..../public/fonts/atkinson-bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
